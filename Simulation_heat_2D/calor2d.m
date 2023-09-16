@@ -1,0 +1,1 @@
+clear allni=11; nj=21;t=load('calor2d.dat');for k=1:100T=reshape(t(k,:),ni,nj);clfpcolor(T');%shading flat;hold oncontour(T',[0:10],'k'); axis equalcolorbar ; caxis([0 10])title(num2str(k),'FontSize',20)drawnow end  
